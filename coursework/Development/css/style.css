@@ -1,0 +1,407 @@
+ *{ 
+     margin: 0;         /* Remove default margins for all elements */ 
+     padding: 0;                /* Remove default padding for all elements */
+     box-sizing: border-box;            /* Includes padding and border in element's width/height */
+ } 
+ .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+ } 
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;              /* Group list items inline */
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+a{
+    text-decoration: none;              /* Removes underline from links */
+    
+}
+
+.a_color{
+    color:#ffffff;
+}
+ p{
+    color:#597081;
+}
+ .container{ 
+    max-width: 1300px;
+    margin: auto;                           /* Center the container */
+    padding-left: 25px;
+    padding-right: 25px;
+ } 
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+     flex-basis: 50%;                    /*setting width to 50% */
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+     line-height: 60px;                    /*  spacing between lines  */
+    margin: 25px 0;
+    color:white;
+}
+.btn{
+     display: inline-block;                  /* aligning buttons inline */
+    background: #343434;
+    color: white;
+    padding: 8px 30px;              /* add spacing inside button */
+    margin: 30px 0;                        /* add top and bottom spacing */
+    border-radius: 30px;                           /* Rounded button edges */
+}
+.btn:hover{
+    background: grey;               /* change color of button to grey on hovering */
+}
+.header{
+    background:#202C2F;
+}
+.header .row{
+    margin-top: 70px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 1s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 50px auto 0;
+    position: relative;
+    line-height: 60px;
+    color: rgb(4, 98, 88);
+}
+h4{
+    color: grey;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+     transform: scale(1.1);             /* Enlarge column on hovering */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin-bottom: 0;
+    padding: 0;
+   
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.about-us {
+    background-color: #e8f5e9; /* Light background for section */
+    padding-top: 50px ; /* Top and bottom padding */
+    text-align: center; /* Center the heading */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading Styles */
+.about-us h1 {
+    font-size: 3.5rem; /* Larger text */
+    font-family: 'Playfair Display', serif; /* Stylish serif font */
+    font-weight: 700; /* Bold text */
+    color: white; /* White color for the text */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 5px; /* Space between letters */
+    margin: 0;
+    padding: 20px;
+    background-color: #c48fc3; /* Background color behind the text */
+    display: inline-block; /* To make the background only as wide as the text */
+    border-radius: 10px; /* Rounded corners on the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    margin-bottom: 30px; /* Add spacing below the heading */
+}
+
+/* Add a soft glow effect to the text */
+.about-us h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f0f0f0 ;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effects */
+    padding-bottom: 60px; /* Add extra space for text */
+    min-height: 300px; /* Ensure the container is taller */
+    position: relative; /* Required for absolute positioning of social links */
+}
+
+/* Add hover effect for the container */
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom of the entire container */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Add hover effect specifically for the profile image */
+.team-member img:hover {
+    transform: scale(1.2); /* Zoom only when hovering directly over the image */
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px; /* Add space below this text */
+}
+
+.extra-text {
+    color: #555; /* Slightly darker gray for extra text */
+    font-size: 12px;
+    margin-top: 10px; /* Space above the extra text */
+}
+
+.social-links {
+    position: absolute;
+    bottom: 10px; /* Move to the bottom of the card */
+    left: 10px; /* Move to the left of the card */
+    display: flex;
+    gap: 10px;
+}
+.cv-button {
+    text-decoration: none;
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    font-size: 12px; /* Font size */
+    padding: 5px 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cv-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icon img {
+    width: 20px; /* Icon size */
+    height: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth effect */
+}
+
+/* Facebook hover effect - larger zoom */
+.social-icon.facebook:hover img {
+    filter: hue-rotate(220deg) brightness(1.2); /* Brightens and changes hue to match Facebook's blue */
+    transform: scale(1.5); /* Increased zoom effect for Facebook */
+}
+
+/* Instagram hover effect */
+.social-icon.instagram:hover img {
+    filter: hue-rotate(320deg) brightness(1.2); /* Adds a unique color effect for Instagram */
+    transform: scale(1.2); /* Zoom effect only on Instagram icon */
+}
+
+/* LinkedIn hover effect */
+.social-icon.linkedin:hover img {
+    filter: hue-rotate(160deg) brightness(1.2); /* Brightens and adjusts color for LinkedIn */
+    transform: scale(1.2); /* Zoom effect only on LinkedIn icon */
+}
+.feedback-form {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feedback-form h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-form p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Footer General Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #f9a602;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a  {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f9a602;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+}
+.des p, li,h3{
+    text-align: center;
+    list-style-type: none;
+}
+a:hover {
+    color: tomato;
+    font-weight: 600;
+  }
+  .footer p{
+    color: #ffffff;
+  }
+
+  .product-card{
+    display: flex !important;
+  }
+
+  .product{
+    width: 25% !important;
+  }
+  
+  
